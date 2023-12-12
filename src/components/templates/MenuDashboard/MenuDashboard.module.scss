@@ -1,0 +1,79 @@
+@import '../../../App.scss';
+
+.menuDashboard {
+    &__container {
+        display: block;
+        height: auto;
+        width: auto;
+        margin-top: 8rem;
+    }
+
+    &__list {
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1.7rem;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+    }
+    
+    &__item {
+        height: 100%;
+        width: 100%;
+        
+        
+        
+    }
+    &__link, &__active {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 1rem;
+        width: 90%;
+        height: 4.4rem;
+        max-width: 18.8rem;
+        margin: 0 auto;
+        text-decoration: none;
+        font-family: $roboto;
+        font-size: 1.6rem;
+        color: $black;
+        border-radius: 2.4rem;
+
+        &:hover {
+            background-color: $grayLight;
+        }
+        
+        p {
+            margin: 0;
+        }
+    }
+    &__active {
+        background-color: $blue;
+        color: $white;
+        &:hover {
+            background-color: $blue;
+        }
+
+        figure {
+            svg {
+                color: $white;
+            }
+        }
+    }
+    
+    
+    &__icon{
+        width: 2rem;
+        padding-left: 1.5rem;
+
+        figure {
+            margin: 0;
+            svg {
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+    }
+}

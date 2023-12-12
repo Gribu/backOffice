@@ -1,0 +1,29 @@
+@import '../../../App.scss';
+
+.authHeader {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    // background-color: red;
+    height: 6rem;
+    margin: 0;
+    padding: 2rem;
+
+    @include mq (lg) {
+        width: 50%;
+        height: 8rem;
+        padding: 2rem 0;
+    }
+
+    &__container {
+        // height: 9rem;
+    }
+
+    &__logoContainer {
+        background-color: blueviolet;
+        // height: 9rem;
+    }
+}

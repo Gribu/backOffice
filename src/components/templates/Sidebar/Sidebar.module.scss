@@ -1,0 +1,36 @@
+@import '../../../App.scss';
+
+
+.sidebar {
+
+    &__content {
+        position: relative;
+        width: 100%;
+        max-width: 24.5rem;
+        height: 100vh;
+        background-color: #fff;
+        border: 1px solid #EBEBEB;
+        // background-color: black;
+        // border-right: 1px solid red;
+        @include mq (sm) {
+            background-color: #fff;
+            border: 1px solid #EBEBEB;
+        }
+
+    }
+    &__image {
+        // background-color: gray;
+        width: 60%;
+        margin: 0 auto;
+        padding-top: 3.5rem;
+
+    }
+
+    &__logout {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 3.5rem;
+    }
+    
+}

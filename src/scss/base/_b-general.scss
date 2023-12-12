@@ -1,0 +1,83 @@
+body {
+  // background: linear-gradient(180deg, #1A1E44 0%, #6E23B1 50.52%, #354FBE 100%);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: gray;
+  font-family: $roboto;
+  min-height: 100vh;
+  padding-right: 0 !important;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+#root {
+  display: flex;
+}
+
+main {
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 86px;  
+
+  @include mq (mdx) {
+      // padding-top: 12.1rem;
+      
+  }
+}
+
+
+label {
+  font-size: 1.8rem;
+  margin: 0 0 1rem;
+  width: 100%;
+}
+
+input {
+  border: 1px solid var(--gray, #D9D8D6);
+  font-size: 1.6rem;
+  line-height: 1.2;
+  padding: 1rem;
+  &::placeholder {
+    opacity: .4;
+  }
+}
+
+select {
+  border: 1px solid var(--gray, #D9D8D6);
+  font-size: 1.6rem;
+  padding: 1rem;
+  text-transform: capitalize;
+  option {
+    text-transform: uppercase;
+  }
+}
+
+.btn {
+  &__trans,
+  &__red {
+    color: $white;
+    border: 0;
+    border-radius: 3rem;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.8rem 3rem;
+    cursor: pointer;
+  }
+  
+  &__trans {
+    background-color: transparent;
+    border: .1rem solid $white;
+  }
+  &__red {
+    background-color: $red;
+  }
+}
+
+.hidden {
+  display: none !important;
+}

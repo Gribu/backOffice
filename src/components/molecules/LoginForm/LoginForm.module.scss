@@ -1,0 +1,37 @@
+@import '../../../App.scss';
+
+.loginForm {
+    &__container {
+        width: 90%;
+        max-width: 40rem;
+        margin: 0 auto;
+        
+        h1 {
+            margin: 0;
+            padding-bottom: 2.4rem;
+        }
+
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+    }
+
+    &__input {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__submit {
+        border-radius: 2.4rem;
+        background-color: $blue;
+        height: 4.8rem;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #1f66e4d1;
+        }
+    }
+}

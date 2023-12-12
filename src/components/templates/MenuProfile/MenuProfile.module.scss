@@ -1,0 +1,50 @@
+@import '../../../App.scss';
+
+.menuProfile {
+    &__container {
+        // background-color: red;
+        padding: 1rem;
+        // width: 100%;
+        // height: 100%;
+        cursor: pointer;
+        &:hover {
+            // background-color: gray;
+            // border-radius: 1.2rem;
+        }
+    }
+
+    &__userLogin {
+        // background-color: blanchedalmond;
+        // height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 1.2rem;
+        
+    }
+
+    &__userImage {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+        figure{
+            width: 4rem;
+            height: 4rem;
+            
+            img {
+                object-fit: cover;
+                border-radius: 60%;
+            }
+        }
+
+        p {
+            margin: 0;
+            font-size: 1.6rem;
+        }
+    }
+
+    &__userArrow {
+        width: 3rem;
+        height: 3rem;
+    }
+}
