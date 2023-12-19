@@ -1,0 +1,249 @@
+@font-face {
+  font-family: "roboto";
+  src: url("../../fonts/roboto/Roboto-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "roboto";
+  src: url("../../fonts/roboto/Roboto-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "roboto";
+  src: url("../../fonts/roboto/Roboto-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "roboto";
+  src: url("../../fonts/roboto/Roboto-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "roboto";
+  src: url("../../fonts/roboto/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "roboto";
+  src: url("../../fonts/roboto/Roboto-RegularItalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "roboto";
+  src: url("../../fonts/roboto/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "roboto";
+  src: url("../../fonts/roboto/Roboto-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "roboto";
+  src: url("../../fonts/roboto/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "roboto";
+  src: url("../../fonts/roboto/Roboto-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "roboto";
+  src: url("../../fonts/roboto/Roboto-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "roboto";
+  src: url("../../fonts/roboto/Roboto-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: gray;
+  font-family: "roboto", sans-serif;
+  min-height: 100vh;
+  padding-right: 0 !important;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+#root {
+  display: flex;
+}
+
+main {
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 86px;
+}
+label {
+  font-size: 1.8rem;
+  margin: 0 0 1rem;
+  width: 100%;
+}
+
+input {
+  border: 1px solid var(--gray, #D9D8D6);
+  font-size: 1.6rem;
+  line-height: 1.2;
+  padding: 1rem;
+}
+input::-moz-placeholder {
+  opacity: 0.4;
+}
+input::placeholder {
+  opacity: 0.4;
+}
+
+select {
+  border: 1px solid var(--gray, #D9D8D6);
+  font-size: 1.6rem;
+  padding: 1rem;
+  text-transform: capitalize;
+}
+select option {
+  text-transform: uppercase;
+}
+
+.btn__trans, .btn__red {
+  color: #FFFFFF;
+  border: 0;
+  border-radius: 3rem;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.8rem 3rem;
+  cursor: pointer;
+}
+.btn__trans {
+  background-color: transparent;
+  border: 0.1rem solid #FFFFFF;
+}
+.btn__red {
+  background-color: #DF013A;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media (min-width: 768px) {
+  .swal2-modal {
+    padding: 30px;
+    width: 600px;
+  }
+}
+.swal2-modal .swal2-title {
+  font-size: 24px;
+  font-weight: 400;
+}
+.swal2-modal .swal2-html-container {
+  font-size: 20px;
+}
+.swal2-modal .swal2-actions {
+  width: 95%;
+}
+@media (min-width: 768px) {
+  .swal2-modal .swal2-actions {
+    width: auto;
+  }
+}
+.swal2-modal .swal2-actions .swal2-confirm {
+  border-radius: 25px;
+  font-size: 20px;
+  width: 100%;
+}
+
+.header {
+  position: absolute;
+  height: 86px;
+  background-color: white;
+  border-bottom: 1px solid #ebebeb;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 100%;
+  padding: 0 3.2rem;
+}
+.header__notification, .header__isNotification {
+  width: 2.4rem;
+  height: 2.4rem;
+  cursor: pointer;
+}
+.header__notification svg, .header__isNotification svg {
+  width: 100%;
+  height: 100%;
+}
+.header__isNotification {
+  position: relative;
+}
+.header__isNotification::before {
+  width: 1.2rem;
+  height: 1.2rem;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  background-color: #1f66e4;
+  border-radius: 2.4rem;
+}
+.header__userLogin {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.header__userImage {
+  margin: 0;
+}
+.header__userImage img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 60%;
+}
+.header__iconArrow {
+  margin: 0;
+}
+.header__iconArrow img {
+  width: 40px;
+  height: 40px;
+}/*# sourceMappingURL=Header.module.css.map */

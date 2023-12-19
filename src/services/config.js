@@ -1,13 +1,16 @@
 const config = {
-    baseUrl: import.meta.env.VITE_BACKEND_API_URL
+    baseURL: import.meta.env.VITE_BACKEND_API_URL
 }
 
-export const getAuthorizationConfig = () => {
+export const getAuthorizationConfig = (token) => {
     
     return {
-        ...config
-    }
+        ...config,
+        headers: {
+            Authorization: `Bearer ${token}`,
+        },
+    };
     
-}
+};
 
 export default config;

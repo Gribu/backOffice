@@ -103,5 +103,6 @@ export const Home = () => {
  * 
  * LISTAR => 
  *    BUSCADOR DE USUARIOS, BOTON DE CREAR
+ * id, name, email, userRole, avatar
  *    TODOS LOS USUARIOS, (EDITAR, ELIMINAR)
  */
